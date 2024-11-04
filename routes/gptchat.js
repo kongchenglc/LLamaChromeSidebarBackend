@@ -32,7 +32,7 @@ async function queryStream(data, ctx) {
   for await (const chunk of inference.chatCompletionStream({
     model: "meta-llama/Llama-3.2-1B-Instruct",
     messages,
-    max_tokens: 500,
+    max_tokens: 1000,
   })) {
     const content = chunk.choices[0]?.delta?.content || '';
     if (content) {
