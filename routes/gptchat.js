@@ -15,7 +15,11 @@ async function query(data) {
     },
     {
       role: "user",
-      content: `Here is the content from the web page: ${data.content}`
+      content: `Here is the content from the web page: ${data.pageContent}`
+    },
+    {
+      role: "user",
+      content: `User's question or message: ${data.message}`
     }
   ];
 
