@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "start": "dotenv -e .env node bin/www",
-    "dev": "dotenv -e .env ./node_modules/.bin/nodemon bin/www",
     "prd": "dotenv -e .env pm2 start --name 'llama-chrome-sidebar-backend' bin/www.js",
     "test": "dotenv -e .env echo \"Error: no test specified\" && exit 1"
   },
