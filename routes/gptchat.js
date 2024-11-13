@@ -41,7 +41,7 @@ async function queryStream(data, ctx) {
             ]
           }
         ],
-        max_tokens: 10000
+        max_tokens: 8000
       });
       break;
     case contentMainTypeText:
@@ -61,7 +61,7 @@ async function queryStream(data, ctx) {
             role: "user",
             content: `Here is the content from the web page: ${data.pageContent}`
           }],
-        max_tokens: 1000
+        max_tokens: 500
       });
   }
 
